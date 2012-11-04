@@ -30,19 +30,19 @@ public class UserCacheUpdater implements Runnable {
 		//New User are created...
 		User user = new User();
 		
-//		//Only Name and Surname properties are set and Id property will be set at trigger level. 
-//		user.setName("James");
-//		user.setSurname("Joyce");
-//		
-//		//Entries are added to cache...
-//		getUserCacheService().addToUserCache("user1", user);
+		//Only Name and Surname properties are set and Id property will be set at trigger level. 
+		user.setName("James");
+		user.setSurname("Joyce");
+		
+		//Entries are added to cache...
+		getUserCacheService().addToUserCache("user1", user);
 
 //		The following code block shows the entry which will be inserted via second member of the cluster 
 //      so it should be opened and above code block should be commented-out before the project is built.
 		
-		user.setName("Thomas");
-		user.setSurname("Moore");
-		getUserCacheService().addToUserCache("user2", user);
+//		user.setName("Thomas");
+//		user.setSurname("Moore");
+//		getUserCacheService().addToUserCache("user2", user);
 
 		//Cache Entries are being printed...
 		printCacheEntries();		
